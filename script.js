@@ -17,30 +17,45 @@ document.addEventListener("DOMContentLoaded", function() {
             switch (page) {
                 case 'home':
                     mainContent.innerHTML = `
-                        <div class="video-background">
-                            <video id="backgroundVideo" autoplay muted loop>
-                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <h1>VFX</h1>
-                                <h2>Compositor</h2>
-                            </div>
+                    <div class="video-background" style="position:relative;">
+                        <!-- Embedded Vimeo video using an iframe -->
+                        <div style="padding:56.25% 0 0 0; position:relative;">
+                            <iframe 
+                                src="https://player.vimeo.com/video/1015033668?autoplay=1&muted=1&loop=1&background=1&title=0&byline=0&portrait=0" 
+                                frameborder="0" 
+                                allow="autoplay; fullscreen; picture-in-picture" 
+                                style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;" 
+                                title="Ravikanth_Compositing_Reel_2024">
+                            </iframe>
                         </div>
-                    `;
+                
+                        <!-- Overlay layer -->
+                        <div class="overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0, 0, 0, 0.5); z-index:2;"></div>
+                
+                        <!-- Content layer with text -->
+                        <div class="content" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:3; color:white;">
+                            <h1>VFX</h1>
+                            <h2>Compositor</h2>
+                        </div>
+                    </div>
+                `;
+                
+                
+                
+                
                     break;
                 case 'mywork':
                     mainContent.innerHTML = `
                         <div class="video-gallery">
-                            ${Array(5).fill().map(() => `
+                           
                                 <div class="video-box">
                                     <video muted>
-                                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                        <source src="https://video.wixstatic.com/video/967fe0_30e7f4dc4184464c9aa8065baf416899/720p/mp4/file.mp4" type="video/mp4">
                                         Your browser does not support HTML5 video.
                                     </video>
                                 </div>
-                            `).join('')}
+
+                            
                         </div>
                     `;
                     document.querySelectorAll('.video-box video').forEach(video => {
@@ -50,13 +65,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     break;
                 case 'breakdowns':
                     mainContent.innerHTML = `
-                        ${Array(5).fill().map(() => `
-                            <div class="slider-container">
-                                <img src="https://picsum.photos/960/540?random=1" alt="Before">
-                                <div class="slider-overlay" style="background-image: url('https://picsum.photos/960/540?grayscale');"></div>
-                                <div class="slider-handle" aria-label="Slider handle">|</div>
-                            </div>
-                        `).join('')}
+                        
+                        <div class="slider-container">
+                            <img src="https://picsum.photos/960/540?random=1" alt="Before">
+                            <div class="slider-overlay" style="background-image: url('https://picsum.photos/960/540?grayscale');"></div>
+                            <div class="slider-handle" aria-label="Slider handle">|</div>
+                        </div>
+                        
                         <div class="content-description">
                             <h2>Breakdown of My Work</h2>
                             <p>Here you can see the before and after of my visual effects work.</p>
@@ -64,13 +79,32 @@ document.addEventListener("DOMContentLoaded", function() {
                     `;
                     initializeSlider();
                     break;
-                case 'portfolio':
-                    mainContent.innerHTML = `
-                        <div class="portfolio-gallery">
-                            ${Array(12).fill().map((_, i) => `
-                                <img src="https://picsum.photos/300/300?random=${i}" alt="Portfolio Image ${i + 1}" data-description="Description for Image ${i + 1}">
-                            `).join('')}
-                        </div>
+                    case 'portfolio':
+                        mainContent.innerHTML = `
+                            <div class="portfolio-gallery">
+                                <div class="portfolio-item">
+                                    <iframe src="https://drive.google.com/file/d/1OcwvYLbQKf65lz33LM7B5_odjW2Q5znP/preview" width="320" height="240" allow="autoplay"></iframe>
+                                    <p>Image 1 Description</p>
+                                    
+                                </div>
+
+                                <img src="https://picsum.photos/1070" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                <img src="https://picsum.photos/1080" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                <img src="https://picsum.photos/1090" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                <img src="https://picsum.photos/1020" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                <img src="https://picsum.photos/1030" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                <img src="https://picsum.photos/1040" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                <img src="https://picsum.photos/1050" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                <img src="https://picsum.photos/1060" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                <img src="https://static.wixstatic.com/media/967fe0_237ce1e086f24eaaba99773d8af76622~mv2.jpeg" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                <img src="https://static.wixstatic.com/media/967fe0_e098f9f8951045089d782e66fb26e678~mv2.jpg" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+
+                                <!-- Add more iframe elements here for additional images -->
+                            </div>
+                        
+                        
+                        
+
                         <div id="image-modal" class="image-modal" role="dialog" aria-labelledby="modal-image" aria-hidden="true">
                             <span class="close" aria-label="Close modal">×</span>
                             <div class="modal-content-container">
@@ -86,7 +120,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 case 'about':
                     mainContent.innerHTML = `
                         <div class="about-me-content">
-                            <img src="https://picsum.photos/200" alt="Profile Picture" class="profile-picture">
+
+                        
+                            <img src="https://static.wixstatic.com/media/967fe0_b15d636debfc4d3fa5ccd91be5c9e92e~mv2.jpeg/v1/fill/w_223,h_223,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1674928531371%20(1).jpeg" alt="Profile Picture" class="profile-picture">
                             <h2> 🎬 Driven VFX Compositor 🌟 Crafting Captivating Visual Narratives</h2>
                             <p>
                                 I am a driven VFX Compositor with a passion for creating immersive visual experiences. 
@@ -95,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 With a commitment to excellence, I continuously seek new challenges to further hone my skills. 
                                 As a collaborative team player, I'm dedicated to working with others to craft visually stunning and impactful storytelling experiences.
                             </p>
-                            <a href="path-to-your-resume.pdf" download="RK_Resume.pdf" class="download-resume-btn">Download Resume</a>
+                            <a href="https://bebabf30-5d26-4c3c-8107-26fc3135ebc5.filesusr.com/ugd/967fe0_a80febd4fbe1444685159c1d8b76c9f3.pdf" download="RK_Resume.pdf" class="download-resume-btn">Download Resume</a>
                         </div>
                     `;
                     initializeAbout();
