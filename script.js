@@ -55,6 +55,38 @@ document.addEventListener("DOMContentLoaded", function() {
                                     </video>
                                 </div>
 
+
+                                <div class="video-box">
+                                    <iframe src="https://player.vimeo.com/video/1018839925?title=0&byline=0&portrait=0&badge=0&autopause=0&loop=1&autoplay=1&muted=0&dnt=1" width="2048" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Shot_0080_Final_Comp"></iframe>
+
+                                </div>
+
+                                <div class="video-box">
+                                    <iframe src="https://player.vimeo.com/video/1018840035?title=0&byline=0&portrait=0&badge=0&autopause=0&loop=1&autoplay=1&muted=0&dnt=1" width="2048" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Shot_0080_Final_Comp">
+                                    </iframe>
+
+                                </div>
+
+                                <div class="video-box">
+                                    <iframe src="https://player.vimeo.com/video/1018843740?title=0&byline=0&portrait=0&badge=0&autopause=0&loop=1&autoplay=1&muted=0&dnt=1" width="2048" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Shot_0080_Final_Comp">
+                                    </iframe>
+
+                                </div>
+
+                                <div class="video-box">
+                                    <iframe src="https://player.vimeo.com/video/1018843710?title=0&byline=0&portrait=0&badge=0&autopause=0&loop=1&autoplay=1&muted=0&dnt=1" width="2048" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Shot_0080_Final_Comp">
+                                    </iframe>
+
+                                    
+
+                                </div>
+
+                                <div class="video-box">
+                                    <iframe src="https://player.vimeo.com/video/1018848729?title=0&byline=0&portrait=0&badge=0&autopause=0&loop=1&autoplay=1&muted=0&dnt=1" width="2048" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Shot_0080_Final_Comp">
+                                    </iframe>
+
+                                </div>
+
                             
                         </div>
                     `;
@@ -82,11 +114,39 @@ document.addEventListener("DOMContentLoaded", function() {
                     case 'portfolio':
                         mainContent.innerHTML = `
                             <div class="portfolio-gallery">
-                                <div class="portfolio-item">
-                                    <iframe src="https://drive.google.com/file/d/1OcwvYLbQKf65lz33LM7B5_odjW2Q5znP/preview" width="320" height="240" allow="autoplay"></iframe>
-                                    <p>Image 1 Description</p>
-                                    
-                                </div>
+
+
+                                
+
+                                <img src='https://i.postimg.cc/xjFKQSK5/MG-0345.jpg' border='0' alt='MG-0345'/>
+                                <img src="https://i.postimg.cc/nc4BD9yR/Bird-Silhoutte-Photography-Ravikanth.jpg" alt="Bird-Silhoutte-Photography-Ravikanth"/>
+                                <img src="https://i.postimg.cc/sxFGB3wC/Glass-Botle-Photography-Ravikanth.jpg" alt="Glass-Botle-Photography-Ravikanth"/>
+                                <img src="https://i.postimg.cc/rwy0RnCs/IMG-1355.jpg" alt="IMG-1355"/>
+                                <img src="https://i.postimg.cc/g0NxKvss/MG-0342.jpg" alt="MG-0342"/>
+                                <img src="https://i.postimg.cc/G26GkF3N/_MG_0513.jpg" alt="_MG_0513"/>
+                                <img src="https://i.postimg.cc/13MFWh5D/_MG_0526.jpg" alt="_MG_0526"/>
+                                <img src="https://i.postimg.cc/3JtrVKmr/Temple-Tomb-Photography-Ravikanth.jpg" alt="Temple-Tomb-Photography-Ravikanth"/>
+                                <img src="https://i.postimg.cc/vHYH011S/Tajmahal-Photography-Ravikanth.jpg" alt="Tajmahal-Photography-Ravikanth"/>
+                                <img src="https://i.postimg.cc/ZqG5HV3r/IMG-7170.avif" alt="IMG-7170"/>
+                                <img src="https://i.postimg.cc/C5H5zkRb/IMG-6763.avif" alt="IMG-6763"/>
+                                <img src="https://i.postimg.cc/1z2fT9xV/IMG-6712.jpg" alt="IMG-6712"/>
+                                <img src="https://i.postimg.cc/0jpMDhBM/Dragon-Fly-Photography-Ravikanth.jpg" alt="Dragon-Fly-Photography-Ravikanth"/>
+                                <img src="https://i.postimg.cc/SKyX8Z6j/MG-0356.jpg" alt="MG-0356"/>
+                                <img src="https://i.postimg.cc/hGy9GFkK/MG-0486.jpg" alt="MG-0486"/>
+                                <img src="https://i.postimg.cc/rmHzBMvt/MG-0382.jpg" alt="MG-0382"/>
+                                <img src="https://i.postimg.cc/8PQLcm0f/10438-01.jpg" alt="10438-01"/>
+                                <img src="https://i.postimg.cc/Wznp2Vyn/IMG-7304.avif" alt="IMG-7304"/>
+                                <img src="https://i.postimg.cc/TwbpvZG7/IMG-6757.avif" alt="IMG-6757"/>
+                                <img src="https://i.postimg.cc/rFNRmX47/Grass-Photography-Ravikanth.jpg" alt="Grass-Photography-Ravikanth"/>
+                                <img src="https://i.postimg.cc/HkT54sHp/Bulb-Photography-Ravikanth.jpg" alt="Bulb-Photography-Ravikanth"/>
+                                
+
+
+
+
+
+
+
 
                                 <img src="https://picsum.photos/1070" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
                                 <img src="https://picsum.photos/1080" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
@@ -96,8 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <img src="https://picsum.photos/1040" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
                                 <img src="https://picsum.photos/1050" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
                                 <img src="https://picsum.photos/1060" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
-                                <img src="https://static.wixstatic.com/media/967fe0_237ce1e086f24eaaba99773d8af76622~mv2.jpeg" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
-                                <img src="https://static.wixstatic.com/media/967fe0_e098f9f8951045089d782e66fb26e678~mv2.jpg" data-full="fullsize2.jpg" alt="Portfolio Image 6" class="portfolio-image">
+                                
 
                                 <!-- Add more iframe elements here for additional images -->
                             </div>
